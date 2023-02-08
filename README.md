@@ -2,7 +2,12 @@
 
 1. Create a web page using HTML and CSS
 1a. Make the knowledge answers the content
-1b. Within the CSS, use 10 selectors
+1b. Within the CSS, use the following selectors:
+• Simple - h1
+• Relational - Descendant
+• Relational - Child
+• Relational - Adjacent Sibling
+• Relational - General Sibling
 
 2. Make a copy of the .css doc as a .scss doc
 2a. Using the DRY principle, make style sheet clean and small
