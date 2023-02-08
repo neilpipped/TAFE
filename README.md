@@ -8,6 +8,7 @@
 • Relational - Child
 • Relational - Adjacent Sibling
 • Relational - General Sibling
+1c. Use 10 additional selectors
 
 2. Make a copy of the .css doc as a .scss doc
 2a. Using the DRY principle, make style sheet clean and small
