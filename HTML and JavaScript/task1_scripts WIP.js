@@ -10,11 +10,19 @@ Calculate the cube of the number - A number cubed is a number that is multiplied
 
 // Function called when the form is submitted.
 // Function performs the calculations and returns false.
-function calculate(){
+function calculate() {
+
 
 
 		// For storing the factorial, squared and cubed results:
 		
+	let number = document.getElementById("number").value;
+	let factorial = 1;
+	for (let x = 2; x <= number; x++) {
+		factorial *= x;
+	}
+	let square = number * number;
+	let cube = number * number * number;
 		
 		
 		
@@ -45,10 +53,8 @@ function calculate(){
 
 // Function called when the window has been loaded.
 // Function needs to add an event handler to the form.
-function init(){
+function init()
     // Add an event handler to the form:
-    
-
-}  // End of init() function.
+  // End of init() function.
 
 // Assign an event handler to the window's load event:

@@ -1,11 +1,7 @@
-<!-- This HTML is not correct. You will need to fix all html errors using W3Validator and add semantics for HTML5 -->
-					           <!-- You will need add a title and your name -->
-<!-- ----------------------------Add or remove for a semantically valid page------------------------------------- -->
-
 <html>
 <head>
    <meta>
-  <title>?????</title>
+  <title>Calculator</title>
   <link href="css/task1.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -22,10 +18,10 @@
         <p>
           <label>
             Please enter a number between 0 and 50</label>
-          <input type="number" name="number" id="number" value="0" min="1" required>>
+          <input type="number" id="number" value="0" min="1" max="50" required>
         </p>
         <p>
-          <input type="submit" name="calculate" id="calculate" value="Calculate"></p>
+          <button id="calculate">Calculate</button>
         <p>
           <label>The Factorial of your number is:
             <input type="text" name="factorial" id="factorial">
@@ -46,7 +42,7 @@
 <p>&nbsp;</p>
   <!-- end .content --></div>
   <div class="footer">
-    <p>student name</p>
+    <p>Neil Nguyen</p>
     <!-- end .footer --></div>
   <!-- end .container --></div>
   <script src="js/task1.js"></script>
