@@ -16,35 +16,40 @@ function calculate() {
 
 		// For storing the factorial, squared and cubed results:
 		
-	let number = document.getElementById("number").value;
-	let factorial = 1;
-	for (let x = 2; x <= number; x++) {
-		factorial *= x;
-	}
-	let square = number * number;
-	let cube = number * number * number;
+	var input = document.getElementById("input").value;
+	
+	
+	
 		
 		
 		
-		  // Get references to the form value:
-		  
+		  // Get references to the form value: 
+		  document.getElementById("calculate").onclick = function() {handleSubmit()}; 
+		  function handleSubmit() {
+			var input = document.getElementById("input");
+			alert("The number you chose is " + input.value);
+		  }
 		  
 	
 		 // Calculate the factorial results:
 		 //HINT: the factorial of 0 is 1.
-		 
-		 
+		 var factorial = 1;	 
+		 for (var x = 2; x <= input; x++) {
+			factorial *= x;
+		 }
 		 // Calculate the squared results:
-		 
+		 var squared = input * input;	 
 		 
 		 
 		  // Calculate the cubed results:
-		  
+		  var cubed = input * input * input;	  
 		  
 		  
 		  
 		  //display factorial, squared and cubed results
-		  
+		  document.getElementById("factorial").value = factorial;
+		  document.getElementById("cubed").value = cubed;
+		  document.getElementById("squared").value = squared;
 		  
 	// Return false to prevent submission:
 	return false; 
@@ -53,8 +58,14 @@ function calculate() {
 
 // Function called when the window has been loaded.
 // Function needs to add an event handler to the form.
-function init()
+function init() {
+
+}
+
     // Add an event handler to the form:
+	document.addEventListener("DOMContentLoaded", function() {
+		document.getElementById("calculate").addEventListener("click", calculate);
+	});
   // End of init() function.
 
 // Assign an event handler to the window's load event:

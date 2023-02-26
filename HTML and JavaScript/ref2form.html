@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+	<script>
+		function handleSubmit() {
+			var input = document.getElementById('input').value;
+			alert('The value you entered is: ' + input);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label for="input">Enter a value:</label>
+		<input type="text" id="input" name="input">
+		<button type="button" onclick="handleSubmit()">Submit</button>
+	</form>
+</body>
+</html>
