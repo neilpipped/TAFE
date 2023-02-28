@@ -23,7 +23,7 @@ function calculate() {
 		
 		
 		
-		  // Get references to the form value: 
+		  // Get references to the form value (ask Junior why this doesn't work first time): 
 		  document.getElementById("calculate").onclick = function() {handleSubmit()}; 
 		  function handleSubmit() {
 			var input = document.getElementById("input");
