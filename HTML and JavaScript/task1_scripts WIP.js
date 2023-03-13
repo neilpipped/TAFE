@@ -57,15 +57,18 @@ function calculate() {
 }// End of calculate() function.
 
 // Function called when the window has been loaded.
+document.addEventListener('DOMContentLoaded', function() {
+    alert("Welcome to the calculator.");
+}, false);
 // Function needs to add an event handler to the form.
-function init() {
+//function init() {
 
-}
+
 
     // Add an event handler to the form:
-	document.addEventListener("DOMContentLoaded", function() {
-		document.getElementById("calculate").addEventListener("click", calculate);
-	});
+	 document.addEventListener("DOMContentLoaded", function() {
+		 document.getElementById("calculate").addEventListener("click", calculate);
+	 });
   // End of init() function.
-
+//	}
 // Assign an event handler to the window's load event:
